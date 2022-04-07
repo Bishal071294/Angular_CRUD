@@ -1,0 +1,11 @@
+<mat-card class="user-details" *ngIf="userDetails">
+    
+    <mat-card-title class="card-color" >{{userDetails.name}}</mat-card-title>
+    <mat-card-content class="card-color">{{userDetails.username}}</mat-card-content>
+    <mat-card-content class="card-color">{{userDetails.email}}</mat-card-content>
+    <mat-card-content class="card-color"> <b>Address:</b> <br> street: {{userDetails.address.street}} <br> suite:{{userDetails.address.suite}} <br> city : {{userDetails.address.city}} <br> zipcode:{{userDetails.address.zipcode}}</mat-card-content>
+    <mat-card-content class="card-color"> <b>Geo:</b> <br> lat:{{userDetails.address.geo.lat}} <br> long:{{userDetails.address.geo.long}}</mat-card-content>
+    <mat-card-content class="card-color">phone: {{userDetails.phone}}</mat-card-content>
+    <mat-card-content class="card-color">website: {{userDetails.website}}</mat-card-content>
+    <mat-card-content class="card-color"> <b>Company:</b> <br> name: {{userDetails.company.name}} <br> catchPhrase: {{userDetails.company.catchPhrase}} <br> bs: {{userDetails.company.bs}}  </mat-card-content>
+    </mat-card>
